@@ -5,6 +5,7 @@
     box-sizing: border-box;
     font-family: 'Mukta', sans-serif;
 }
+
 body {
     display: flex;
     height: 100vh;
@@ -93,4 +94,36 @@ textarea {
     background: linear-gradient(109deg, rgba(10, 12, 16, 0.99) 15%, rgba(10, 12, 16, 0.7) 50%, rgba(10, 12, 16, 0.99) 85%);
 }
 
+
+@media screen and (max-width: 1020px) {
+    
+    body {
+       flex-direction: column-reverse;
+    }
+
+    .imagem-mario-luigi {
+        display: none;
+    }
+
+    .logo-mario {
+        display: block;
+        margin: 0 auto;
+    }
+
+    .caixa-principal {
+        width: 90%;
+        padding: 20px;
+    }
+
+    button {
+        display: block;
+        margin: 20px auto 0;
+    }
+
+    p {
+        font-size: 19px;
+    }
+    
+    
+}
     

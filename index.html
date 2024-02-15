@@ -7,15 +7,15 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@300;700&display=swap" rel="stylesheet">
-    <title>Super Mario</title>
     <link rel="stylesheet" href="style.css">
+    <title>Super Mario</title>
 </head>
 
 <body>
     <div class="video-mario">
         <video src="Imagem/video.mp4" autoplay muted loop></video>
         <div class="mascara-video"></div>
-    </div>
+    </div><!--FIM-video-mario-->
 
     <div class="caixa-principal">
         <img src="Imagem/logo.png" alt="Logo Super Mario" class="logo-mario">
@@ -24,7 +24,7 @@
             torneiras que não param de pingar? Não se preucupe, porque estamos aqui para salvar o dia! Apresentamos a
             vocês os encanadores mais famosos do Reino dos Cogumelos - Mario e Luigi!</p>
         <button onclick="cliqueiNoBotao()">fale Conosco</button>
-    </div>
+    </div><!--FIM CAIXA-PRINCIPAL-->
 
     <img src="Imagem/mario.png" alt="Logo Mario e Luigi" class="imagem-mario-luigi">
 
@@ -32,27 +32,10 @@
         <input placeholder="Seu nome" type="text">
         <input placeholder="Seu telefone" type="telefone">
         <textarea placeholder="Digite seu problema aqui"></textarea>
-        <button onclick="formulário">Enviar formulário</button>
+        <button onclick="sumirFormulario()">Enviar formulário</button>
 
-    </form>
+    </form><!--FIM-Fale-conosco -->
     <div class="mascara-form"></div>
 </body>
-<script>
-    let formulário = document.querySelector(".Fale-conosco")
-    let mascara = document.querySelector(".mascara-form")
-
-    console.log(formulário)
-
-    function cliqueiNoBotao(){
-       formulário.style.left = "700px"
-       mascara.style.visibility = "visible"
-  }
-
-  function sumirFormulario(){
-        formulário.style.left = "-220px"
-        mascara.styli.visibility = "hidden"
-  }
-
-</script>
-
+<script src="script.js"></script>
 </html>
